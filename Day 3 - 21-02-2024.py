@@ -86,7 +86,7 @@ for i in range(1,n+1):
             print(i)
         """
 #approach 2
-n = int(input())
+"""n = int(input())
 s=0
 for i in range(2,n+1,2):
     for j in range(1,i):
@@ -94,5 +94,54 @@ for i in range(2,n+1,2):
             s+=j
     if s==i:
         print(i)
-    s=0
-
+    s=0"""
+#p4 groceries
+'''
+t = int(input())
+for i in range(t):
+    n,x = map(int,input().split(" "))
+    A = list(map(int,input().split(" "))) #freshness
+    B = list(map(int,input().split(" "))) #costs
+    cost = 0
+    for i in range(n):
+        if A[i] >= x:
+            cost = cost + B[i]
+    print(cost) '''
+#p5 prime number
+'''
+n = int(input())
+c =0
+for i in range(1,n+1):
+    l = []
+    if n%i == 0:
+        c = c+1
+if c<=2:
+   print("it is a prime number")
+else:
+   print("Not a prime number")
+   '''#approach2-list
+'''
+n = int(input())
+c = 0
+l = []
+for i in range(1,n+1):
+    if n%i == 0:
+        l.append(i)
+print(l)
+if(len(l) <= 2):
+    print("prime")
+else:
+    print("not prime")'''
+#p4 running
+'''
+t = int(input())
+for i in range(t):
+    n = int(input())
+    A = list(map(int,input().split(" ")))
+    B = list(map(int,input().split(" ")))
+    happy = 0
+    for i in range(n):
+        if A[i] <= 2*B[i] and B[i] <= 2*A[i]:
+            happy+=1
+    print(happy)
+'''
